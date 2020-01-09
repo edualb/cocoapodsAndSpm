@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B22028B399DBEB5D01F73BF7 /* libPods-SPMCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F900B0C8FF7231FDCD75F9E /* libPods-SPMCocoa.a */; };
+		EDF31F2B23C5124A00B78F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31F2A23C5124A00B78F24 /* AppDelegate.swift */; };
+		EDF31F2D23C5124A00B78F24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31F2C23C5124A00B78F24 /* SceneDelegate.swift */; };
+		EDF31F2F23C5124A00B78F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31F2E23C5124A00B78F24 /* ViewController.swift */; };
+		EDF31F3223C5124A00B78F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF31F3023C5124A00B78F24 /* Main.storyboard */; };
+		EDF31F3423C5124B00B78F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF31F3323C5124B00B78F24 /* Assets.xcassets */; };
+		EDF31F3723C5124B00B78F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF31F3523C5124B00B78F24 /* LaunchScreen.storyboard */; };
+		EDF31F4223C5124B00B78F24 /* SPMCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31F4123C5124B00B78F24 /* SPMCocoaTests.swift */; };
+		EDF31F4D23C5124B00B78F24 /* SPMCocoaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31F4C23C5124B00B78F24 /* SPMCocoaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF31F3E23C5124B00B78F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF31F1F23C5124A00B78F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF31F2623C5124A00B78F24;
+			remoteInfo = SPMCocoa;
+		};
+		EDF31F4923C5124B00B78F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF31F1F23C5124A00B78F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF31F2623C5124A00B78F24;
+			remoteInfo = SPMCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F900B0C8FF7231FDCD75F9E /* libPods-SPMCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPMCocoa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF499F70B66E6DE03482DAA /* Pods-SPMCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPMCocoa.debug.xcconfig"; path = "Target Support Files/Pods-SPMCocoa/Pods-SPMCocoa.debug.xcconfig"; sourceTree = "<group>"; };
+		EDF31F2723C5124A00B78F24 /* SPMCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF31F2A23C5124A00B78F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF31F2C23C5124A00B78F24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EDF31F2E23C5124A00B78F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDF31F3123C5124A00B78F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF31F3323C5124B00B78F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF31F3623C5124B00B78F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDF31F3823C5124B00B78F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF31F3D23C5124B00B78F24 /* SPMCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPMCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF31F4123C5124B00B78F24 /* SPMCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMCocoaTests.swift; sourceTree = "<group>"; };
+		EDF31F4323C5124B00B78F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF31F4823C5124B00B78F24 /* SPMCocoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPMCocoaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF31F4C23C5124B00B78F24 /* SPMCocoaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMCocoaUITests.swift; sourceTree = "<group>"; };
+		EDF31F4E23C5124B00B78F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20FD3738CD39B8C39A1FF41 /* Pods-SPMCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPMCocoa.release.xcconfig"; path = "Target Support Files/Pods-SPMCocoa/Pods-SPMCocoa.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF31F2423C5124A00B78F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22028B399DBEB5D01F73BF7 /* libPods-SPMCocoa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF31F3A23C5124B00B78F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF31F4523C5124B00B78F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A483FA2D6A55AA98AA78033B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F900B0C8FF7231FDCD75F9E /* libPods-SPMCocoa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA6B93663B26785AB10AF90A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDF499F70B66E6DE03482DAA /* Pods-SPMCocoa.debug.xcconfig */,
+				F20FD3738CD39B8C39A1FF41 /* Pods-SPMCocoa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDF31F1E23C5124A00B78F24 = {
+			isa = PBXGroup;
+			children = (
+				EDF31F2923C5124A00B78F24 /* SPMCocoa */,
+				EDF31F4023C5124B00B78F24 /* SPMCocoaTests */,
+				EDF31F4B23C5124B00B78F24 /* SPMCocoaUITests */,
+				EDF31F2823C5124A00B78F24 /* Products */,
+				BA6B93663B26785AB10AF90A /* Pods */,
+				A483FA2D6A55AA98AA78033B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF31F2823C5124A00B78F24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31F2723C5124A00B78F24 /* SPMCocoa.app */,
+				EDF31F3D23C5124B00B78F24 /* SPMCocoaTests.xctest */,
+				EDF31F4823C5124B00B78F24 /* SPMCocoaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF31F2923C5124A00B78F24 /* SPMCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31F2A23C5124A00B78F24 /* AppDelegate.swift */,
+				EDF31F2C23C5124A00B78F24 /* SceneDelegate.swift */,
+				EDF31F2E23C5124A00B78F24 /* ViewController.swift */,
+				EDF31F3023C5124A00B78F24 /* Main.storyboard */,
+				EDF31F3323C5124B00B78F24 /* Assets.xcassets */,
+				EDF31F3523C5124B00B78F24 /* LaunchScreen.storyboard */,
+				EDF31F3823C5124B00B78F24 /* Info.plist */,
+			);
+			path = SPMCocoa;
+			sourceTree = "<group>";
+		};
+		EDF31F4023C5124B00B78F24 /* SPMCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31F4123C5124B00B78F24 /* SPMCocoaTests.swift */,
+				EDF31F4323C5124B00B78F24 /* Info.plist */,
+			);
+			path = SPMCocoaTests;
+			sourceTree = "<group>";
+		};
+		EDF31F4B23C5124B00B78F24 /* SPMCocoaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31F4C23C5124B00B78F24 /* SPMCocoaUITests.swift */,
+				EDF31F4E23C5124B00B78F24 /* Info.plist */,
+			);
+			path = SPMCocoaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF31F2623C5124A00B78F24 /* SPMCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF31F5123C5124B00B78F24 /* Build configuration list for PBXNativeTarget "SPMCocoa" */;
+			buildPhases = (
+				D03CDCD69459969FB7EBCA39 /* [CP] Check Pods Manifest.lock */,
+				EDF31F2323C5124A00B78F24 /* Sources */,
+				EDF31F2423C5124A00B78F24 /* Frameworks */,
+				EDF31F2523C5124A00B78F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPMCocoa;
+			productName = SPMCocoa;
+			productReference = EDF31F2723C5124A00B78F24 /* SPMCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF31F3C23C5124B00B78F24 /* SPMCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF31F5423C5124B00B78F24 /* Build configuration list for PBXNativeTarget "SPMCocoaTests" */;
+			buildPhases = (
+				EDF31F3923C5124B00B78F24 /* Sources */,
+				EDF31F3A23C5124B00B78F24 /* Frameworks */,
+				EDF31F3B23C5124B00B78F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF31F3F23C5124B00B78F24 /* PBXTargetDependency */,
+			);
+			name = SPMCocoaTests;
+			productName = SPMCocoaTests;
+			productReference = EDF31F3D23C5124B00B78F24 /* SPMCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDF31F4723C5124B00B78F24 /* SPMCocoaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF31F5723C5124B00B78F24 /* Build configuration list for PBXNativeTarget "SPMCocoaUITests" */;
+			buildPhases = (
+				EDF31F4423C5124B00B78F24 /* Sources */,
+				EDF31F4523C5124B00B78F24 /* Frameworks */,
+				EDF31F4623C5124B00B78F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF31F4A23C5124B00B78F24 /* PBXTargetDependency */,
+			);
+			name = SPMCocoaUITests;
+			productName = SPMCocoaUITests;
+			productReference = EDF31F4823C5124B00B78F24 /* SPMCocoaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF31F1F23C5124A00B78F24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = eduardo.silva;
+				TargetAttributes = {
+					EDF31F2623C5124A00B78F24 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EDF31F3C23C5124B00B78F24 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = EDF31F2623C5124A00B78F24;
+					};
+					EDF31F4723C5124B00B78F24 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = EDF31F2623C5124A00B78F24;
+					};
+				};
+			};
+			buildConfigurationList = EDF31F2223C5124A00B78F24 /* Build configuration list for PBXProject "SPMCocoa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF31F1E23C5124A00B78F24;
+			productRefGroup = EDF31F2823C5124A00B78F24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF31F2623C5124A00B78F24 /* SPMCocoa */,
+				EDF31F3C23C5124B00B78F24 /* SPMCocoaTests */,
+				EDF31F4723C5124B00B78F24 /* SPMCocoaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF31F2523C5124A00B78F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF31F3723C5124B00B78F24 /* LaunchScreen.storyboard in Resources */,
+				EDF31F3423C5124B00B78F24 /* Assets.xcassets in Resources */,
+				EDF31F3223C5124A00B78F24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF31F3B23C5124B00B78F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF31F4623C5124B00B78F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D03CDCD69459969FB7EBCA39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPMCocoa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF31F2323C5124A00B78F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF31F2F23C5124A00B78F24 /* ViewController.swift in Sources */,
+				EDF31F2B23C5124A00B78F24 /* AppDelegate.swift in Sources */,
+				EDF31F2D23C5124A00B78F24 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF31F3923C5124B00B78F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF31F4223C5124B00B78F24 /* SPMCocoaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF31F4423C5124B00B78F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF31F4D23C5124B00B78F24 /* SPMCocoaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF31F3F23C5124B00B78F24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF31F2623C5124A00B78F24 /* SPMCocoa */;
+			targetProxy = EDF31F3E23C5124B00B78F24 /* PBXContainerItemProxy */;
+		};
+		EDF31F4A23C5124B00B78F24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF31F2623C5124A00B78F24 /* SPMCocoa */;
+			targetProxy = EDF31F4923C5124B00B78F24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF31F3023C5124A00B78F24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF31F3123C5124A00B78F24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDF31F3523C5124B00B78F24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF31F3623C5124B00B78F24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF31F4F23C5124B00B78F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDF31F5023C5124B00B78F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF31F5223C5124B00B78F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF499F70B66E6DE03482DAA /* Pods-SPMCocoa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPMCocoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spm.cocoa.SPMCocoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF31F5323C5124B00B78F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20FD3738CD39B8C39A1FF41 /* Pods-SPMCocoa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPMCocoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spm.cocoa.SPMCocoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDF31F5523C5124B00B78F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPMCocoaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spm.cocoa.SPMCocoaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPMCocoa.app/SPMCocoa";
+			};
+			name = Debug;
+		};
+		EDF31F5623C5124B00B78F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPMCocoaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spm.cocoa.SPMCocoaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPMCocoa.app/SPMCocoa";
+			};
+			name = Release;
+		};
+		EDF31F5823C5124B00B78F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPMCocoaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spm.cocoa.SPMCocoaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SPMCocoa;
+			};
+			name = Debug;
+		};
+		EDF31F5923C5124B00B78F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPMCocoaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spm.cocoa.SPMCocoaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SPMCocoa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF31F2223C5124A00B78F24 /* Build configuration list for PBXProject "SPMCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF31F4F23C5124B00B78F24 /* Debug */,
+				EDF31F5023C5124B00B78F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF31F5123C5124B00B78F24 /* Build configuration list for PBXNativeTarget "SPMCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF31F5223C5124B00B78F24 /* Debug */,
+				EDF31F5323C5124B00B78F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF31F5423C5124B00B78F24 /* Build configuration list for PBXNativeTarget "SPMCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF31F5523C5124B00B78F24 /* Debug */,
+				EDF31F5623C5124B00B78F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF31F5723C5124B00B78F24 /* Build configuration list for PBXNativeTarget "SPMCocoaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF31F5823C5124B00B78F24 /* Debug */,
+				EDF31F5923C5124B00B78F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF31F1F23C5124A00B78F24 /* Project object */;
+}

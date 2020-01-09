@@ -1,0 +1,6 @@
+module Pods_SPMCocoa {
+  umbrella header "Pods-SPMCocoa-umbrella.h"
+
+  export *
+  module * { export * }
+}
