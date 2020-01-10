@@ -1,6 +1,0 @@
-source "https://github.com/CocoaPods/Specs.git"
-source "https://github.com/edualb/CocoapodsPrivate"
-
-target 'SPMCocoa' do
-    pod 'libExample', '~> 1.0.0'
-end

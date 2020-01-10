@@ -1,6 +1,0 @@
-module libExample {
-  umbrella header "libExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
