@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9D5C1499A99B44BFE0F79725 /* Pods_cocoapodsAndSpm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B315DCA6548CFEF28FE54AB5 /* Pods_cocoapodsAndSpm_Tests.framework */; };
+		ED64C63223C8CA1500458B2D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ED64C63123C8CA1500458B2D /* Kingfisher */; };
 		F0C3FAA88B0F1FC06E50339E /* Pods_cocoapodsAndSpm_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C537E176CD3DB9D2D6DA82EB /* Pods_cocoapodsAndSpm_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,9 +45,9 @@
 		7CAB737157A13D57DC0D99F1 /* Pods-cocoapodsAndSpm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodsAndSpm_Example.release.xcconfig"; path = "Target Support Files/Pods-cocoapodsAndSpm_Example/Pods-cocoapodsAndSpm_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B315DCA6548CFEF28FE54AB5 /* Pods_cocoapodsAndSpm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoapodsAndSpm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C537E176CD3DB9D2D6DA82EB /* Pods_cocoapodsAndSpm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoapodsAndSpm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC2118E01F9D6D8B38A29BCB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E4ECE3DD7A1A81FF583F5F81 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F8F17860A157CD7B6F7F502F /* cocoapodsAndSpm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = cocoapodsAndSpm.podspec; path = ../cocoapodsAndSpm.podspec; sourceTree = "<group>"; };
+		CC2118E01F9D6D8B38A29BCB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E4ECE3DD7A1A81FF583F5F81 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8F17860A157CD7B6F7F502F /* cocoapodsAndSpm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = cocoapodsAndSpm.podspec; path = ../cocoapodsAndSpm.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED64C63223C8CA1500458B2D /* Kingfisher in Frameworks */,
 				F0C3FAA88B0F1FC06E50339E /* Pods_cocoapodsAndSpm_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +149,6 @@
 				48F83B1C2404866905ABFD6C /* Pods-cocoapodsAndSpm_Tests.debug.xcconfig */,
 				36D0C3B00AEAEC6CE8743158 /* Pods-cocoapodsAndSpm_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,6 +179,9 @@
 			dependencies = (
 			);
 			name = cocoapodsAndSpm_Example;
+			packageProductDependencies = (
+				ED64C63123C8CA1500458B2D /* Kingfisher */,
+			);
 			productName = cocoapodsAndSpm;
 			productReference = 607FACD01AFB9204008FA782 /* cocoapodsAndSpm_Example.app */;
 			productType = "com.apple.product-type.application";
@@ -227,10 +231,14 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				ED64C63023C8CA1500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -468,7 +476,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -479,7 +488,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cocoapodsAndSpm/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +507,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cocoapodsAndSpm/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,7 +533,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -534,7 +555,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -574,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED64C63023C8CA1500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED64C63123C8CA1500458B2D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED64C63023C8CA1500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
