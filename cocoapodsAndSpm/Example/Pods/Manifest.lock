@@ -1,0 +1,16 @@
+PODS:
+  - cocoapodsAndSpm (0.2.0)
+
+DEPENDENCIES:
+  - cocoapodsAndSpm (from `../`)
+
+EXTERNAL SOURCES:
+  cocoapodsAndSpm:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  cocoapodsAndSpm: 85d72e9053184dc92d499ed9c70c163af1becb78
+
+PODFILE CHECKSUM: 3261ef5970ebe8f2ba7ebcd72c358d128675fb1c
+
+COCOAPODS: 1.8.4

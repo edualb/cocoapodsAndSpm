@@ -1,0 +1,22 @@
+{
+  "name": "cocoapodsAndSpm",
+  "version": "0.2.0",
+  "summary": "A short description of cocoapodsAndSpm.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/edualb/cocoapodsAndSpm",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "edualb": "eduardoslafiq@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/edualb/cocoapodsAndSpm.git",
+    "tag": "0.2.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "cocoapodsAndSpm/Classes/**/*"
+}

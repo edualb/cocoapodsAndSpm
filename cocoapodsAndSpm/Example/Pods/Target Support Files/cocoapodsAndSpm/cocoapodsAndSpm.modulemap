@@ -1,0 +1,6 @@
+framework module cocoapodsAndSpm {
+  umbrella header "cocoapodsAndSpm-umbrella.h"
+
+  export *
+  module * { export * }
+}
