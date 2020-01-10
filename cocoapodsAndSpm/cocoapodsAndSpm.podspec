@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'cocoapodsAndSpm'
-  s.version          = '0.2.0'
+  s.version          = '0.4.0'
   s.summary          = 'A short description of cocoapodsAndSpm.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/edualb/cocoapodsAndSpm.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'cocoapodsAndSpm/Classes/**/*'
   
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Kingfisher', '~> 4.9.0'
 end

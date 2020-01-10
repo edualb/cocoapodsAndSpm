@@ -14,7 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9D5C1499A99B44BFE0F79725 /* Pods_cocoapodsAndSpm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B315DCA6548CFEF28FE54AB5 /* Pods_cocoapodsAndSpm_Tests.framework */; };
-		ED64C63223C8CA1500458B2D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ED64C63123C8CA1500458B2D /* Kingfisher */; };
+		ED64C63523C8CFC500458B2D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ED64C63423C8CFC500458B2D /* Kingfisher */; };
 		F0C3FAA88B0F1FC06E50339E /* Pods_cocoapodsAndSpm_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C537E176CD3DB9D2D6DA82EB /* Pods_cocoapodsAndSpm_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED64C63223C8CA1500458B2D /* Kingfisher in Frameworks */,
+				ED64C63523C8CFC500458B2D /* Kingfisher in Frameworks */,
 				F0C3FAA88B0F1FC06E50339E /* Pods_cocoapodsAndSpm_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,7 +180,7 @@
 			);
 			name = cocoapodsAndSpm_Example;
 			packageProductDependencies = (
-				ED64C63123C8CA1500458B2D /* Kingfisher */,
+				ED64C63423C8CFC500458B2D /* Kingfisher */,
 			);
 			productName = cocoapodsAndSpm;
 			productReference = 607FACD01AFB9204008FA782 /* cocoapodsAndSpm_Example.app */;
@@ -237,7 +237,7 @@
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
-				ED64C63023C8CA1500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				ED64C63323C8CFC500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -275,13 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-cocoapodsAndSpm_Example/Pods-cocoapodsAndSpm_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/cocoapodsAndSpm/cocoapodsAndSpm.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cocoapodsAndSpm_Example/Pods-cocoapodsAndSpm_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cocoapodsAndSpm.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cocoapodsAndSpm_Example/Pods-cocoapodsAndSpm_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -427,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -473,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -498,6 +497,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -517,6 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -601,7 +602,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ED64C63023C8CA1500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		ED64C63323C8CFC500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -612,9 +613,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ED64C63123C8CA1500458B2D /* Kingfisher */ = {
+		ED64C63423C8CFC500458B2D /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ED64C63023C8CA1500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = ED64C63323C8CFC500458B2D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

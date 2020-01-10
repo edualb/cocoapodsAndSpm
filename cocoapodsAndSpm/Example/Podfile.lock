@@ -1,16 +1,23 @@
 PODS:
-  - cocoapodsAndSpm (0.2.0)
+  - cocoapodsAndSpm (0.4.0):
+    - Kingfisher (~> 4.9.0)
+  - Kingfisher (4.9.0)
 
 DEPENDENCIES:
   - cocoapodsAndSpm (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
 
 EXTERNAL SOURCES:
   cocoapodsAndSpm:
     :path: "../"
 
 SPEC CHECKSUMS:
-  cocoapodsAndSpm: 85d72e9053184dc92d499ed9c70c163af1becb78
+  cocoapodsAndSpm: 296610e573c19e184f67586cd1f2fcea503e3dca
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
 
-PODFILE CHECKSUM: 3261ef5970ebe8f2ba7ebcd72c358d128675fb1c
+PODFILE CHECKSUM: e7c9cb22ad72ac902d01069bdd773c6fa410b1cf
 
 COCOAPODS: 1.8.4

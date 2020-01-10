@@ -26,15 +26,25 @@
                                     <constraint firstAttribute="height" constant="128" id="djd-ac-Wy1"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="URu-nM-d8V">
+                                <rect key="frame" x="67" y="101" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LFt-OQ-GBl"/>
+                                    <constraint firstAttribute="height" constant="128" id="ie3-DZ-qph"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="195-Zz-JlN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2e4-Uj-il0"/>
                             <constraint firstItem="195-Zz-JlN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="DIa-w0-fnW"/>
+                            <constraint firstAttribute="trailing" secondItem="URu-nM-d8V" secondAttribute="trailing" constant="68" id="Ore-jz-Z0d"/>
+                            <constraint firstItem="195-Zz-JlN" firstAttribute="top" secondItem="URu-nM-d8V" secondAttribute="bottom" constant="40.5" id="yj5-Q0-bBv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="image" destination="195-Zz-JlN" id="9ef-ss-aHg"/>
+                        <outlet property="image2" destination="URu-nM-d8V" id="s13-6F-OLN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -13,12 +13,13 @@ import Kingfisher
 class ViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = URL(string: "https://cdn-www.bluestacks.com/bs-images/ragnarok-m-eternal-love_banner.jpg")
         image.kf.setImage(with: url)
-        DownloadImage.setImage()
+        DownloadImage.setImage(image2)
     }
 
     override func didReceiveMemoryWarning() {

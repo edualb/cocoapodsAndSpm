@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '10.0'
 
 target 'cocoapodsAndSpm_Example' do
   pod 'cocoapodsAndSpm', :path => '../'
@@ -6,6 +7,5 @@ target 'cocoapodsAndSpm_Example' do
   target 'cocoapodsAndSpm_Tests' do
     inherit! :search_paths
 
-    
   end
 end
